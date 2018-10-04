@@ -406,7 +406,7 @@ class tool_coursearchiver_tracker {
             switch ($this->mode) {
                 case tool_coursearchiver_processor::MODE_COURSELIST:
                     $cliicon = empty($data->visible) ? "hide " : "show ";
-                    $empty = $this->empty ? "MT " : "";
+                    $empty = $this->empty ? ";empty " : "";
                     $date = get_string('never', 'tool_coursearchiver');
                     if (!empty($data->timeaccess)) {
                         $date = date("m/d/y", $data->timeaccess);
